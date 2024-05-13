@@ -209,6 +209,12 @@ section div:not(:last-child) {
   left: 10px;
 }
 
+@media (prefers-color-scheme: light) {
+  .header-decorative-element {
+    visibility: hidden;
+  }
+}
+
 @media (min-width: 768px) {
 
   .header {
@@ -295,7 +301,7 @@ section:not(:last-child) {
   grid-row-end: 4;
 }
 
-.image_vertical-sqare{
+.image_vertical-sqare {
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 2;
