@@ -11,7 +11,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .page.theme_dark {
+  .page {
     --background-color: #FFF1F7;
     --main-text-color: #353430;
     --accent-color: #FF8DCB;
