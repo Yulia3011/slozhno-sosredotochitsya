@@ -308,7 +308,7 @@ section:not(:last-child) {
   grid-row-end: 2;
 }
 
-.image_horizontal-big{
+.image_horizontal-big {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 3;
@@ -374,7 +374,7 @@ section:not(:last-child) {
     width: 49%;
   }
 
-  .section-special{
+  .section-special {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -382,6 +382,5 @@ section:not(:last-child) {
 
   .footer {
     height: 768px;
-    
   }
 }

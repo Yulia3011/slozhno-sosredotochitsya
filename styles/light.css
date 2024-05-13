@@ -11,7 +11,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .page.theme_dark  {
+  .page.theme_dark {
     --background-color: #FFF1F7;
     --main-text-color: #353430;
     --accent-color: #FF8DCB;
@@ -20,5 +20,6 @@
     --small-heading-color:#353430;
     --button-color:#353430;
     --button-hover: 1px solid rgba(50, 49, 45, 0.4);
-    --background-image: url("/images/cover-image-light.png");}
+    --background-image: url("/images/cover-image-light.png");
+  }
 }
