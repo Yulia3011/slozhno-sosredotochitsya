@@ -7,5 +7,5 @@
   --small-heading-color: #ff0070;
   --button-color:#ff0070;
   --button-hover: 1px solid rgba(255, 0, 112, 0.4);
-  --background-image: url("/images/cover-image-dark.png");
+  --background-image: url("../images/cover-image-dark.png");
 }

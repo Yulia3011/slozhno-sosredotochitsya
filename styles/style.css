@@ -39,7 +39,7 @@ a:focus-visible {
   position: relative;
 }
 
-.header::after {
+.corner-decor::after {
   content: "";
   position: absolute;
   width: 25px;
@@ -50,7 +50,7 @@ a:focus-visible {
   top: 10px;
 }
 
-.header::before {
+.corner-decor::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -70,10 +70,6 @@ a:focus-visible {
   line-height: 25px;
 }
 
-.theme_light .header-decorative-element {
-  visibility: hidden;
-}
-
 .header-decorative-element::after {
   content: "";
   position: absolute;
@@ -91,8 +87,8 @@ a:focus-visible {
 }
 
 .header__theme-menu-button {
-width: 70px;
-height: 26px;
+min-width: 70px;
+min-height: 26px;
 padding: 0px 13px 4px 13px;
 background-color: transparent;
 border: none;
@@ -187,33 +183,15 @@ section div:not(:last-child) {
   position: relative;
 }
 
-.footer::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid var(--small-heading-color);
-  border-right: 1px solid var(--small-heading-color);
-  right: 10px;
-  top: 10px;
+.decor-heading-footer {
+  color: var(--decor-heading-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 0.825em;
+  align-self: center;
+  font-weight: 700;
 }
 
-.footer::before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border-left: 1px solid var(--small-heading-color);
-  border-bottom: 1px solid var(--small-heading-color);
-  bottom: 10px;
-  left: 10px;
-}
-
-@media (prefers-color-scheme: light) {
-  .header-decorative-element {
-    visibility: hidden;
-  }
-}
 
 @media (min-width: 768px) {
 
@@ -344,8 +322,6 @@ section:not(:last-child) {
   .header {
     grid-template-rows: 326px 87px 1fr;
     height: 768px;
-    padding-right: 20px;
-    padding-left: 0px;
     padding-top: 20px;
   }
 
@@ -362,12 +338,11 @@ section:not(:last-child) {
   }
 
   .decor-heading {
-    color: var(--decor-heading-color);
-    text-shadow: 4px 4px 0 var(--accent-color);
     font-size: 157px;
-    line-height: 0.825em;
-    align-self: center;
-    font-weight: 700;
+  }
+
+  .decor-heading-footer {
+    font-size: 157px;
   }
 
   .title-decor-header {
@@ -378,6 +353,10 @@ section:not(:last-child) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+  }
+
+  .section-two-columns {
+    gap: 8px;
   }
 
   .footer {
